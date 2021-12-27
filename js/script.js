@@ -76,7 +76,7 @@ async function getPhotos() {
       * &count="count"      --> how many images you need "count"
       
       */
-    const url = `https://api.unsplash.com/photos/random/?client_id=${"ylcizMu3iGwmeMYXj6DbzEsCu28ST-o1YZGbscoVsME"}&count=${10}`;
+    const url = `https://api.unsplash.com/photos/random/?client_id=${"ylcizMu3iGwmeMYXj6DbzEsCu28ST-o1YZGbscoVsME"}&count=${20}`;
 
     try {
         //fetching data from setuped unsplashAPI url
