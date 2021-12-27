@@ -14,6 +14,7 @@ function imageLoaded() {
     imagesLoaded++;
     if (imagesLoaded === totalImages) {
         ready = true;
+        loader.hidden = true;
     }
 }
 function displayPhotos() {
@@ -62,6 +63,7 @@ function displayPhotos() {
         // /*it will convert the template literal to html then append to imageContainer */
         // imageContainer.insertAdjacentHTML("beforeend", a);
     });
+
 }
 
 // get photos from unsplashAPI
