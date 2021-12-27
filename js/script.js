@@ -8,13 +8,14 @@ let photoArray = [];
 let imagesLoaded = 0;
 let totalImages = 0;
 let ready = false;
-
+let count = 5;
 function imageLoaded() {
     //increamenting +1
     imagesLoaded++;
     if (imagesLoaded === totalImages) {
         ready = true;
         loader.hidden = true;
+        count = 15;
     }
 }
 function displayPhotos() {
@@ -76,7 +77,7 @@ async function getPhotos() {
       * &count="count"      --> how many images you need "count"
       
       */
-    const url = `https://api.unsplash.com/photos/random/?client_id=${"ylcizMu3iGwmeMYXj6DbzEsCu28ST-o1YZGbscoVsME"}&count=${20}`;
+    const url = `https://api.unsplash.com/photos/random/?client_id=${"ylcizMu3iGwmeMYXj6DbzEsCu28ST-o1YZGbscoVsME"}&count=${count}`;
 
     try {
         //fetching data from setuped unsplashAPI url
